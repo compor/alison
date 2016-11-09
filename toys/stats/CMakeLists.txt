@@ -9,7 +9,7 @@ set(PRJ_NAME "stats")
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lm")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lm")
 
 add_executable(${PRJ_NAME} 
   stats.c)
