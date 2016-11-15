@@ -15,6 +15,7 @@ file(GLOB SRC_FILES . *.c)
 foreach(SRC_FILE ${SRC_FILES})
   string(REGEX REPLACE "\\.c$" "" EXE ${SRC_FILE})
   get_filename_component(EXE ${EXE} NAME)
+  message("setting up executable: ${EXE}")
 
   add_executable(${EXE} ${SRC_FILE})
   target_link_libraries(${EXE})
