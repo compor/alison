@@ -36,7 +36,7 @@ CC=clang \
   --enable-autogen \
   --enable-prof \
   --enable-debug \
-  --with-jemalloc-prefix="jemalloc_lol_" \
+  --with-jemalloc-prefix="jemalloc_" \
   --prefix="$INSTALL_PREFIX"
 
 RC=$?
