@@ -31,16 +31,12 @@ echo "info: install dir: ${INSTALL_PREFIX}"
 echo ""
 
 
-pushd "$SRC_DIR"
-./autogen.sh
-popd
-
-
 CC=clang \
-  $SRC_DIR/configure \
+  "$SRC_DIR"/configure \
+  --enable-autogen \
   --enable-prof \
   --enable-debug \
-  --with-jemalloc-prefix="jemalloc_" \
+  --with-jemalloc-prefix="jemalloc_lol_" \
   --prefix="$INSTALL_PREFIX"
 
 RC=$?
