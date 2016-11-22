@@ -8,7 +8,8 @@ project(alison-toys)
 # requirements
 
 if(NOT DEFINED MEMORY_ALLOCATOR_ROOT)
-  message(FATAL_ERROR "Memory allocator root directory was not specified")
+  message(FATAL_ERROR 
+    "MEMORY_ALLOCATOR_ROOT: Memory allocator root directory was not specified")
 endif()
 
 
