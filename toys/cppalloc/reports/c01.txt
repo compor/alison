@@ -1,0 +1,22 @@
+## Report
+
+### Time spent in user space for 10 runs
+
+1.941
+1.891
+3.145
+1.886
+1.847
+1.867
+2.037
+1.821
+1.889
+1.83
+
+### Stats
+
+ - mean 2.0154
+ - median 1.8875
+ - std deviation 0.4017656033
+
+
