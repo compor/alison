@@ -28,6 +28,7 @@ find_package(Threads REQUIRED)
 # configuration
 
 add_subdirectory(stats)
+add_subdirectory(cppalloc)
 
 
 # installation
